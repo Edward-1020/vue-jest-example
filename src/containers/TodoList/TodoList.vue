@@ -1,12 +1,17 @@
 <template>
   <div>
-    <h1>TodoList</h1>
+    <Header />
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+import Header from './components/Header'
+
 export default {
-  name: 'TodoList'
+  name: 'TodoList',
+  components: {
+    Header
+  }
 }
 </script>
 
