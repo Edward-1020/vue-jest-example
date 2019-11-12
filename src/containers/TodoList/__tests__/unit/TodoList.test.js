@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import TodoList from '../../TodoList.vue'
-import Header from '../../components/Header.vue';
+import Header from '../../components/Header.vue'
 
 it('Header 样式发生改变，做提示', () => {
   const wrapper = shallowMount(Header);
