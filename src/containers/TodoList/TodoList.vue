@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Header @add="addUndoItem"/>
   </div>
 </template>
 
@@ -9,6 +9,16 @@ import Header from './components/Header'
 
 export default {
   name: 'TodoList',
+  data () {
+    return {
+      undoList: []
+    }
+  },
+  methods: {
+    addUndoItem (inputValue) {
+      this.undoList.push(inputValue)
+    }
+  },
   components: {
     Header
   }
