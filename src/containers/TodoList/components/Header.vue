@@ -3,6 +3,7 @@
     <div class="header-content">
       TodoList:
       <input
+        placeholder="add todoItem"
         class="header-input"
         data-test="input"
         v-model="inputValue"
